@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Simple Calclutor</title>
+        <style>
+            p{
+                font-size: 20px;
+
+            }
+        </style>
+        <script type="text/javascript">
+           let a=document.getElementById("n1").value;
+           a=parseInt(a);
+           let b=document.getElementById("n2").value;
+            b=parseInt(b);
+            
+            
+           
+
+           
+            function add(){
+                
+                let total=a+b;
+                document.write("<h2>"+total+"</h2>");
+            }
+            function sub(){
+                var a=document.getElementById("n1").value;
+                a=parseInt(a);
+                var b=document.getElementById("n2").value;
+                b=parseInt(b);
+                var total=a-b;
+                document.write("<h2>"+total+"</h2>");
+            }
+            function mul(){
+                var a=document.getElementById("n1").value;
+                a=parseInt(a);
+                var b=document.getElementById("n2").value;
+                b=parseInt(b);
+                var total=a*b;
+                document.write("<h2>"+total+"</h2>");
+            }
+            function div(){
+                var a=document.getElementById("n1").value;
+                a=parseInt(a);
+                var b=document.getElementById("n2").value;
+                b=parseInt(b);
+                var total=a/b;
+                document.write("<h2>"+total+"</h2>");
+            }
+       
+
+        </script>
+    </head>
+    <body style="background-color:purple;">
+        <p>Enter num1:<input type="text" style="font-size: 20px;" id="n1"></p>
+        <p>Enter num2:<input type="text" style="font-size: 20px;" id="n2"></p><br>
+        <input type="button" value="Add" style="background-color:orange; font-size: 25px; width: 25%;" onclick="add()">
+        <input type="button" value="Subtract" style="background-color: yellow; font-size:25px; width:25%;" onclick="sub()"><br><br>
+        <input type="button" value="Multiply" style="background-color: red; font-size: 25px; width: 25%;"  onclick="mul()">
+        <input type="button" value="Division" style="background-color: green; font-size:25px; width:25%"  onclick="div()">
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>1 to 10 numbers</title>
+        <style>
+            body{
+                background-color: darkgreen;
+            }
+            p{
+                text-align: center;
+            }
+        </style>
+        <script type="text/javascript">
+            
+            function check()
+            {
+                var n=document.getElementById("number").value;
+                n=parseInt(n);
+                if (isNaN(n)==false)
+                {
+                    if (n<1 || n>11)
+                        {
+                            document.write("Number should be between 1-10");
+                        }
+                    else 
+                    {
+                        document.write("Thank you");
+                    }
+                }
+                else{
+                        document.write("Not a number");
+                    }
+            }
+
+        </script>
+    </head>
+    <body>
+        <p style="font-size: 30px;"> Enter a number</p>
+        <p style="width: 100%";> <input type="text"  id="number"></p>
+        <p ><input type="button" style="font-size: 30px;" value="validate" onclick="check()">
+
+    </body>
+</html>

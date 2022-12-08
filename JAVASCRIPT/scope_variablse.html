@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Scope of Variables</title>
+        <script type="text/javascript">
+            var a=5; //Global Variable
+            document.write("<h1>This is global variable a="+a+"</h1>");
+            
+            function myfunc(){
+                var a=10;//Loacl variable
+                document.write("<h1>This is Local variable a="+a+"</h1>")
+            }
+            myfunc();
+
+        </script>
+    </head>
+</html>

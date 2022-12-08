@@ -1,0 +1,20 @@
+.radio1{
+    padding-left: 30px;
+    padding-top:30px;
+    
+}
+#l1{
+    width: 10px;
+    height:10px;
+}
+.but1{
+    text-align: left;
+    padding:30px;
+}
+#but{
+    background-color: #22A39F;
+    border:2px solid black;
+    
+    font-size:15px;
+    cursor:pointer;
+}

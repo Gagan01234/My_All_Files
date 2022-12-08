@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons</title>
+    <link rel="stylesheet" href="radio.css">
+
+</head>
+<body>
+    <div class="radio1">
+    <input type="radio" name="laptop" id="l1" value="ASUS Laptop">ASUS Laptop
+    <input type="radio" name="laptop" id="l2" value="DELL Laptop">DELL Laptop
+    </div>
+    <div class="but1">
+        <input type="button" id="but" value="Click me" onclick="fun()">
+    </div>
+    <script>
+        function fun(){
+            var rd1=document.getElementById("l1");
+            var rd2=document.getElementById("l2");
+            if (rd1.checked==true){
+                alert("You selected "+rd1.value);
+            }
+            else if(rd2.checked==true){
+                alert("You selected "+rd2.value);
+            }
+            else{
+                alert("No Laptop selected");
+            }
+        }
+    </script>
+</body>
+</html>

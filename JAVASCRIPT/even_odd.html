@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Even or Odd number</title>
+    <style>
+        p{
+            text-align: center;
+            font-size: 30px;
+        }
+        
+    </style>
+    <script type="text/javascript" >
+        function check(){
+            var n=document.getElementById("num").value;
+            n=parseInt(n);
+            if (isNaN(n)==false)
+            {
+                if (n%2==0)
+                {   
+                    document.write("The number is <mark>Even</mark>");
+                }
+                else{
+                    document.write("The number is <mark>Odd</mark>");
+                }
+            }
+            else{
+                document.write("Only numbers are allowed!!")
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Enter a number</p>
+    <p> <input type="text" id="num"></p>
+    <p><input type="button" style="font-size: 30px;" value="validate" onclick="check()"> </p>
+    
+</body>
+</html>

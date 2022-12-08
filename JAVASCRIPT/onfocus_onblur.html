@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>onblur and onfocus</title>
+        <style>
+        body{
+            background-color:lightblue;
+        }
+        </style>
+        <script type="text/javascript">
+            
+            function lower()
+            {
+                var x=document.getElementById("fname").value;
+                document.getElementById("fname").value=x.toLowerCase();
+            }  
+            function upper()
+            {
+                var y=document.getElementById("fname").value;
+                document.getElementById("fname").value=y.toUpperCase();
+            }
+        </script>
+        
+    </head>
+    <body>
+        Enter your name:
+        <input type="text" id="fname" onfocus="lower()" onblur="upper()">
+    </body>
+
+</html>
